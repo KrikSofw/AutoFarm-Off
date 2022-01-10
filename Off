@@ -1,1 +1,106 @@
 _G.Strength = false
+_G.Durability = false
+_G.Chakra = false
+_G.Sword = false
+_G.Agilty = false
+_G.Speed = false
+
+
+
+spawn(function()
+
+while _G.Strength == true do
+    
+    local args = {
+        [1] = "Stat",
+        [2] = "Strength"
+    }
+    
+    game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+    wait()
+
+end
+    
+end)
+
+spawn(function ()
+    
+
+while _G.Durability == true do
+    
+    local args = {
+        [1] = "Stat",
+        [2] = "Durability"
+    }
+    
+    game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+    wait()
+
+end
+
+end)
+
+spawn(function ()
+    
+while _G.Chakra == true do
+    
+    local args = {
+        [1] = "Stat",
+        [2] = "Chakra"
+    }
+    
+    game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+    wait()
+
+end
+
+end)
+
+spawn(function ()
+    
+while _G.Sword == true do
+    
+    local args = {
+        [1] = "Stat",
+        [2] = "Sword"
+    }
+    
+    game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+    wait()
+
+end
+
+end)
+
+spawn(function ()
+    
+while _G.Agilty == true do
+    
+local args = {
+    [1] = "Stat",
+    [2] = "Agility"
+}
+
+game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+wait()
+
+end
+
+end)
+
+spawn(function ()
+    
+while _G.Speed == true do
+    
+
+local args = {
+    [1] = "Stat",
+    [2] = "Speed"
+}
+
+game:GetService("ReplicatedStorage").RSPackage.Events.StatFunction:InvokeServer(unpack(args))
+wait()
+
+end
+
+end)
